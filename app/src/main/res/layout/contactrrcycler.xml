@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="@dimen/_5sdp"
+    android:elevation="12dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/c2"
+        >
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="12dp"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="@dimen/_6sdp"
+
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonback"
+                >
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:src="@drawable/ic_baseline_person_24"
+                    app:civ_border_color="@color/white"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:padding="@dimen/_4sdp"
+                    app:civ_border_width="@dimen/_2sdp"
+                    android:id="@+id/profile"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+                <TextView
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:textColor="@color/black"
+                    android:text="Abed khan"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_18sdp"
+                    android:id="@+id/username"
+                    />
+
+                <TextView
+                    app:layout_constraintTop_toBottomOf="@id/username"
+                    app:layout_constraintStart_toEndOf="@id/profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:text="018402192837"
+                    android:textColor="@color/purple_700"
+                    android:layout_marginStart="3dp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15sdp"
+                    android:id="@+id/userNumber"
+                    />
+
+
+
+
+
+                <TextView
+                    android:layout_marginStart="3dp"
+                    app:layout_constraintBottom_toBottomOf="@id/profile"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Location"
+                    android:textStyle="bold"
+                    android:padding="@dimen/_5sdp"
+                    android:textSize="20sp"
+                    android:id="@+id/userRelation"
+                    />
+
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <ImageView
+                app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:src="@drawable/call"
+                android:id="@+id/call"
+                android:textStyle="bold"
+                android:padding="5dp"
+                />
+
+
+
+
+            <ImageView
+                app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/call"
+                android:layout_width="@dimen/_50sdp"
+                android:textStyle="bold"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:src="@drawable/message"
+                android:layout_height="@dimen/_30sdp"
+                android:id="@+id/message"
+                android:padding="5dp"
+                />
+                      <ImageView
+                app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/message"
+                android:layout_width="@dimen/_50sdp"
+                android:textStyle="bold"
+                android:src="@drawable/gmail"
+                android:layout_height="@dimen/_30sdp"
+                android:id="@+id/mail"
+                android:padding="5dp"
+                />
+
+
+            <TextView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:drawablePadding="@dimen/_5sdp"
+                android:drawableStart="@drawable/ic_baseline_location_on_24"
+                android:textSize="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:layout_height="wrap_content"
+                android:text="Mother"
+                android:id="@+id/userLocation"
+                android:padding="5dp"
+                />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
